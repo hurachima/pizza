@@ -1,0 +1,162 @@
+@import "global";
+@import "vars";
+@import "fonts";
+
+.header {
+  &__inner {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &-text {
+    font-size: 59px;
+  }
+
+  &__choose {
+    display: flex;
+    flex-direction: column;
+    margin: 0 186px;
+  }
+
+  &__choose-title {
+    margin-top: 15px;
+    font-size: 32px;
+    @extend %title-font-cyrilic;
+  }
+
+  &__choose-subtitle {
+    @extend %title-font-cyrilic;
+    margin-top: 10px;
+  }
+}
+
+.form {
+  &__inner {
+    display: flex;
+    align-items: baseline;
+  }
+  &__wrapper {
+    display: flex;
+    width: 49%;
+  }
+  &-label {
+    @extend %title-font-cyrilic;
+  }
+
+  &__item {
+    margin: 10px 0;
+  }
+
+  &-input {
+    border-radius: 15px;
+  }
+
+  &-btn {
+    border: none;
+    color: #fff;
+    background-color: black;
+    border: 1px solid #000;
+    border-radius: 15px;
+    padding: 10px 10px;
+    transition: all 0.5s;
+    @extend %title-font-cyrilic;
+    margin-left: 3px;
+    &:hover {
+      color: #000;
+      background-color: #fff;
+    }
+  }
+}
+
+.p-item {
+  background-color: black;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 8px;
+  width: 100px;
+  display: inline-block;
+  margin: 10px 10px;
+  text-align: center;
+  @extend %title-font-cyrilic;
+}
+
+.section {
+  &__inner {
+    display: flex;
+  }
+
+  &__form label {
+    @extend %title-font-cyrilic;
+    font-size: 20px;
+  }
+
+  &__form-title {
+    @extend %title-font-cyrilic;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 16px;
+    font-size: 23px;
+  }
+
+  &__form-subtitle {
+    @extend %title-font-cyrilic;
+    margin-bottom: 10px;
+    font-size: 20px;
+    &.last {
+      margin-top: 20px;
+    }
+  }
+}
+
+.card-item {
+  width: 420px;
+  height: 550px;
+  background-color: #fff;
+  box-shadow: -8px 1px 10px 4px rgba(34, 60, 80, 0.2);
+  padding: 20px;
+  margin: 40px 40px;
+
+  &-img {
+    display: flex;
+    justify-content: center;
+    img {
+      width: 80%;
+    }
+  }
+  &__price-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-price {
+    font-size: 30px;
+  }
+  &-btn {
+    border: none;
+    @extend %title-font-cyrilic;
+    border-radius: 15px;
+    border: 1px solid #000;
+    font-size: 19px;
+    background: #000;
+    color: #fff;
+    padding: 10px 10px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-right: 30px;
+    &:hover {
+      background: #fff;
+      color: #000;
+    }
+  }
+}
+
+.card__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.active {
+  visibility: hidden;
+}

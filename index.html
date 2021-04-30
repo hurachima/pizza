@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIZZA</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo">
+                    <h1 class="header-text">pizza</h1>
+                </div>
+                <div class="header__content">
+                    <div class="header__choose">
+                        <h1 class="header__choose-title">Власний вибір:</h1>
+                       
+                        <form class="form" onsubmit="return false">
+                            <div class="form__inner">
+                             <h3 class="header__choose-subtitle">Розмір тіста:</h3>
+                            <input type="radio" name="radio">
+                            <label for="" class="form-label">30 см</label>
+
+                            <input type="radio" name="radio">
+                            <label for="" class="form-label">60 см</label>
+                            
+                            <input type="radio" name="radio">
+                            <label for="" class="form-label">90 см</label>  
+                        </div>
+                        <div class="form__item">
+                      <label class="form-label">Компоненти:</label>
+                        
+                        <input type="text" class="form-input" id="input">
+                        <button id="add" class="form-btn">+</button>
+                        <button id="remove" class="form-btn">X</button>
+                    </div>
+                    <div class="btn-wrapper">
+                    <button type="submit" class="form-btn">Замовити</button>
+                </div>
+                 </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <section class="section">
+        <div class="container">
+            <div class="section__inner">
+                <div class="form__wrapper">
+                <form  class="section__form" onsubmit="return false">
+                
+                    <h2 class="section__form-title">вибір з наявних:</h2>
+
+                    <h4 class="section__form-subtitle">Тип:</h4>
+                    <div class="section__form-items">
+                    <input type="checkbox" name="checkbox1">
+                    <label>М'ясна</label>
+                    </div>
+                    <div class="section__form-items">
+                    <input type="checkbox" name="checkbox2">
+                    <label>Вегетеріанська</label>
+                    </div>
+
+                    <div class="section__form-items">
+                    <input type="checkbox" name="checkbox3">
+                    <label>З Морепродуктами</label>
+                    </div>
+
+                    <h4 class="section__form-subtitle">Ціна:</h4>
+
+
+                    <div class="section__form-items">
+                        <input type="range" id="r1" oninput="fun1()"  min="1" max="100" value="50">
+                        <p id="one"></p>
+                    </div>
+
+
+                    <h4 class="section__form-subtitle">Компоненти:</h4>
+
+
+
+                    <div class="section__form-items">
+                        <input type="checkbox" name="checkbox">
+                        <label>Курка</label>
+                        </div>
+
+                        <div class="section__form-items">
+                        <input type="checkbox" name="checkbox">
+                        <label>Гриби</label>
+                        </div>
+    
+                        <div class="section__form-items">
+                        <input type="checkbox" name="checkbox">
+                        <label>Помідори</label>
+                        </div>
+
+
+                        <h4 class="section__form-subtitle last">Додатково:</h4>
+
+                        <div class="section__form-items">
+                            <input type="checkbox" name="checkbox">
+                            <label>Гостра</label>
+                            </div>
+                            
+                            <div class="section__form-items">
+                            <input type="checkbox" name="checkbox">
+                            <label>Дитяча</label>
+                            </div>
+                </form>
+            </div>
+
+                <div class="card__wrapper">
+                <div class="card-item item-1">
+                    <div class="card-item-img">
+                        <img src="images/1.jpeg" alt="img">
+                    </div>
+                    <div class="card-item-content">
+                        <h2 class="card-item-title">М'ясна</h2>
+                        <p class="card-item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque numquam eos itaque deserunt praesentium, quod necessitatibus culpa cum voluptate exercitationem!</p>
+                    </div>
+                    <div class="card-item__price-wrapper">
+
+                    <span class="card-item-price">169₴</span>
+
+                    <button class="card-item-btn">В кошик</button>
+                </div>
+
+                </div>
+
+
+               
+                <div class="card-item item-2">
+                    <div class="card-item-img">
+                        <img src="images/1.jpeg" alt="img">
+                    </div>
+                    <div class="card-item-content">
+                        <h2 class="card-item-title">4 сиру</h2>
+                        <p class="card-item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque numquam eos itaque deserunt praesentium, quod necessitatibus culpa cum voluptate exercitationem!</p>
+                    </div>
+
+                    <div class="card-item__price-wrapper">
+
+                        <span class="card-item-price">169₴</span>
+    
+                        <button class="card-item-btn">В кошик</button>
+                    </div>
+
+                </div>
+
+
+
+                <div class="card-item item-3">
+                    <div class="card-item-img">
+                        <img src="images/1.jpeg" alt="img">
+                    </div>
+                    <div class="card-item-content">
+                        <h2 class="card-item-title">4 сиру</h2>
+                        <p class="card-item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque numquam eos itaque deserunt praesentium, quod necessitatibus culpa cum voluptate exercitationem!</p>
+                    </div>
+
+                    <div class="card-item__price-wrapper">
+
+                        <span class="card-item-price">169₴</span>
+    
+                        <button class="card-item-btn">В кошик</button>
+                    </div>
+
+                </div>
+
+                
+                <div class="card-item item-4">
+                    <div class="card-item-img">
+                        <img src="images/1.jpeg" alt="img">
+                    </div>
+                    <div class="card-item-content">
+                        <h2 class="card-item-title">4 сиру</h2>
+                        <p class="card-item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque numquam eos itaque deserunt praesentium, quod necessitatibus culpa cum voluptate exercitationem!</p>
+                    </div>
+
+                    <div class="card-item__price-wrapper">
+
+                        <span class="card-item-price">169₴</span>
+    
+                        <button class="card-item-btn">В кошик</button>
+                    </div>
+
+                </div>
+
+
+
+                <div class="card-item item-5">
+                    <div class="card-item-img">
+                        <img src="images/1.jpeg" alt="img">
+                    </div>
+                    <div class="card-item-content">
+                        <h2 class="card-item-title">4 сиру</h2>
+                        <p class="card-item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque numquam eos itaque deserunt praesentium, quod necessitatibus culpa cum voluptate exercitationem!</p>
+                    </div>
+
+                    <div class="card-item__price-wrapper">
+
+                        <span class="card-item-price">169₴</span>
+    
+                        <button class="card-item-btn">В кошик</button>
+                    </div>
+
+                </div>
+
+                
+                <div class="card-item item-6">
+                    <div class="card-item-img">
+                        <img src="images/1.jpeg" alt="img">
+                    </div>
+                    <div class="card-item-content">
+                        <h2 class="card-item-title">4 сиру</h2>
+                        <p class="card-item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque numquam eos itaque deserunt praesentium, quod necessitatibus culpa cum voluptate exercitationem!</p>
+                    </div>
+
+                    <div class="card-item__price-wrapper">
+
+                        <span class="card-item-price">169₴</span>
+    
+                        <button class="card-item-btn">В кошик</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+                
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
