@@ -35,6 +35,16 @@ $('input[name="checkbox1"]').click(function(){
 
 });
 
+$('input[name="checkbox2"]').click(function(){
+    $('.card-item:not(:eq(2))').toggleClass('active');
+ 
+ });
+
+ $('input[name="checkbox3"]').click(function(){
+    $('.card-item:not(:eq(1))').toggleClass('active');
+ 
+ });
+
 
 });
 
