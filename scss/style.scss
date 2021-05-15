@@ -160,3 +160,32 @@
 .active {
   visibility: hidden;
 }
+
+.cart {
+  &__inner {
+    width: 346px;
+    min-height: 350px;
+    box-shadow: -8px 1px 10px 4px rgba(34, 60, 80, 0.2);
+    z-index: 20;
+    margin-top: 20px;
+  }
+
+  &-item {
+    display: flex;
+    align-items: center;
+  }
+  &-item-img {
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  &-item-title {
+    @extend %title-font-cyrilic;
+    font-size: 25px;
+  }
+}

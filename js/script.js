@@ -56,3 +56,8 @@ function fun1(){
 };
 
 
+$('.cart').click(function(){
+    $('.cart__inner').toggleClass('active');
+});
+
+

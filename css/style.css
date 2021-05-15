@@ -45,7 +45,7 @@ body {
   padding: 0 10px;
 }
 
-.header__choose-title, .header__choose-subtitle, .form-label, .form-btn, .p-item, .section__form label, .section__form-title, .section__form-subtitle, .card-item-btn {
+.header__choose-title, .header__choose-subtitle, .form-label, .form-btn, .p-item, .section__form label, .section__form-title, .section__form-subtitle, .card-item-btn, .cart-item-title {
   font-family: "Oswald", sans-serif;
 }
 
@@ -196,4 +196,32 @@ body {
 
 .active {
   visibility: hidden;
+}
+
+.cart__inner {
+  width: 346px;
+  min-height: 350px;
+  box-shadow: -8px 1px 10px 4px rgba(34, 60, 80, 0.2);
+  z-index: 20;
+  margin-top: 20px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+}
+
+.cart-item-img {
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.cart-item-img img {
+  width: 100px;
+  height: 100px;
+}
+
+.cart-item-title {
+  font-size: 25px;
 }
