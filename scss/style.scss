@@ -168,6 +168,7 @@
     box-shadow: -8px 1px 10px 4px rgba(34, 60, 80, 0.2);
     z-index: 20;
     margin-top: 20px;
+    margin-bottom: 26px;
   }
 
   &-item {
@@ -188,4 +189,21 @@
     @extend %title-font-cyrilic;
     font-size: 25px;
   }
+}
+
+.counter {
+  display: flex;
+  &__value {
+    width: 27px;
+    height: min-content;
+    text-align: center;
+    margin: 12px 12px;
+  }
+  &__btn {
+    height: min-content;
+  }
+}
+
+.card-item-price--cart {
+  font-size: 24px;
 }
