@@ -227,6 +227,11 @@ body {
   font-size: 25px;
 }
 
+.cart-item-delete {
+  margin-top: 65px;
+  margin-left: 42px;
+}
+
 .counter {
   display: flex;
 }

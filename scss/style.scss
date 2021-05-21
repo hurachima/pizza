@@ -189,6 +189,11 @@
     @extend %title-font-cyrilic;
     font-size: 25px;
   }
+
+  &-item-delete {
+    margin-top: 65px;
+    margin-left: 42px;
+  }
 }
 
 .counter {

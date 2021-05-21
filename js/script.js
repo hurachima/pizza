@@ -61,11 +61,31 @@ $('.cart').click(function(){
 });
 
 
+const cardBtn = document.querySelectorAll('.card-item-btn');
+
+cardBtn.forEach(btn=>{
+    btn.onclick = function(){
+        console.log('click');
+        document.querySelector('.cart__inner').innerHTML +=  `<div class="cart-item">
+        <div class="cart-item-img">
+            <img src="images/1.jpeg" alt="">
+        </div>
+        <div class="cart-item-content">
+            <h1 class="cart-item-title">М'ясна</h1>
+            <span class="card-item-price card-item-price--cart">169₴</span>
+            <div class="counter">
+                <button class="form-btn counter__btn" data-direction="minus">-</button>
+                <input type="text" value="0" class="counter__value">
+                <button class="form-btn counter__btn" data-direction="plus">+</button>
+            </div>
+        </div>
+        <button class="form-btn cart-item-delete">X</button>
+    </div>`
 
 
-//-----------------COUNTER-------------------
+    //-----------COUNTER---------------------
 
-const btns = document.querySelectorAll('.counter__btn');
+    const btns = document.querySelectorAll('.counter__btn');
 
 
 btns.forEach(btn=>{
@@ -85,6 +105,32 @@ btns.forEach(btn=>{
         inp.value = newValue;
     })
 })//------>
+
+
+
+    const deleteBtn = document.querySelectorAll('.cart-item-delete');
+
+    deleteBtn.forEach(btn=>{
+        btn.onclick = function(){
+            console.log('delete');
+            document.querySelector('.cart-item').remove();
+        }
+    })
+
+    
+ }
+
+});
+
+
+
+
+
+
+
+
+
+
 
 
 
