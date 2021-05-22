@@ -117,10 +117,35 @@ btns.forEach(btn=>{
         }
     })
 
+
+    
+
+   
+
+  
+
+    
+
+
+
+
+
     
  }
 
 });
+
+
+
+
+const Modal = document.querySelector('#deliver');
+
+Modal.addEventListener('click',function(){
+    swal("Ваше замовлення відправлене!");
+
+});
+
+
 
 
 
